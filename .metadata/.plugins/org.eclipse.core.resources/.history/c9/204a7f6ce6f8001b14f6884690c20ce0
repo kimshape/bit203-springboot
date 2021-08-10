@@ -1,0 +1,23 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class LoginProcessController {
+//@GetMapping("/loginForm")
+//public void loginForm() {
+//	
+//}
+	@GetMapping("/loginForm")
+	public String loginFrom() {
+		return "loginForm";
+		
+	}
+	
+	@GetMapping("/loginCheck")
+	public String loginCheck() {
+		return "welcome";
+		
+	}
+}

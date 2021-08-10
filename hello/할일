@@ -1,0 +1,77 @@
+1. loginForm.html  호출 되도록 컨트롤러를 만든다
+2. loginForm.html에서 orm mybatis 를 이용할것인데
+	오늘은 거기까지 들어가지 않고 loginCheck 로 데이터를 넘긴다
+	welcome.html 이 호출되도록	
+ 
+ =====> 
+  로그인프로세스 컨트롤러 메소드 ==> loginForm.html
+  submit 버튼을 누르면  ==> 로그인프로세스 컨트롤러 에서 loginCheck메소드 호출
+      매개변수로 받은 데이터를  system out 출력 
+      ==> 리턴 welcome.html
+      
+      
+//////////////////////////////////
+20210810  
+	로그인프로세스 컨트롤러 loginCheck메소드 
+	DAO적인 jdbc ==> oracle , mybatis
+		--> pom.xml lib 
+			- oracle ojdbc8
+			- jdbc
+			- mybatis
+			
+		--> 환경설정/hello/src/main/resources/application.properties
+		    - dataSource driverClassName
+		    # MyBatis ,  폴더와 package 설정
+				mybatis.mapper-locations=
+				mybatis.type-aliases-package=
+				mybatis.type-handlers-package=
+		    
+		    
+		    
+		--> dao적인 interface , query 문을 가지고 Mapper.xml
+		    - @Mapper
+				public interface MemberDao {
+					
+					Member getMember(@Param("userId") String userId , @Param("userPw") String userPw);
+				}
+				<mapper namespace="com.example.hello.model.dao.MemberDao">
+					<!-- Member getMember(@Param("userId") String userId , @Param("userPw") String userPw); -->
+					<select id="getMember" resultType="com.example.hello.model.vo.Member">
+				  		select *  from  member  where  userId =#{userId} and userPw = #{userPw} 
+				  	</select>
+					
+				</mapper>  
+		--> Controller에서 dao  와 bean을 호출해서 연결 autowire
+			@Autowired
+			private MemberDao memberDao;
+		--> dao.메소드(id,pw) 결과 리턴
+
+	실제데이터가 있는지 없는지에 따라가 
+	존재: welcome.html
+    존재하지 않는다면 : loginForm.html
+    
+///////////////////////////////////////////////////////
+오후
+	==> welcome.html에서 조회된 member의 이름과 이메일등의 정보를 출력해보자  
+	==> memberList 호출
+	    :  http://localhost:9095/memberList
+		--> controller의  memberList()  호출
+		     
+		    --> dao의 memberList() 
+		        ~~Mapper.xml 
+		           <select id="memberList" > ~~~</~~>
+		    --> 결과를
+		          
+		    --> memberList.html로 전송
+	
+	
+ ////////////////////////////////////////////////////////////
+    가입창
+    멤버가입완료됬는지 확인 메세지 출력
+    멤버목록확인
+    
+    
+    
+    
+    
+    

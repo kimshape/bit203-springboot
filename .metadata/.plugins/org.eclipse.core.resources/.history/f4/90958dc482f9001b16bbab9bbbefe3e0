@@ -1,0 +1,10 @@
+1. loginForm.html  호출 되도록 컨트롤러를 만든다
+2. loginForm.html에서 orm mybatis 를 이용할것인데
+	오늘은 거기까지 들어가지 않고 loginCheck 로 데이터를 넘긴다
+	welcome.html 이 호출되도록	
+ 
+ =====> 
+  로그인프로세스 컨트롤러 메소드 ==> loginForm.html
+  submit 버튼을 누르면  ==> 로그인프로세스 컨트롤러 에서 loginCheck메소드 호출
+      매개변수로 받은 데이터를  system out 출력 
+      ==> 리턴 welcome.html
