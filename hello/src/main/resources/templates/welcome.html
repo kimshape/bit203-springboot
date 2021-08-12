@@ -5,6 +5,16 @@
     <title>welcome</title>
   </head>
   <body>
+  
+  <input type="checkbox" name="active" th:checked="${member.active}" /> 멤버활성화 <br>
+  
+  
+  
+   |The name is ${member.userName}|  <br>
+   <p  th:text="${member.userName}"></p>
+   
+  [[${member.userName}  ]] <br>
+  
     환영 <p th:text="#{home.welcome}">xxxx</p>
     환영 <p th:text="${userId}">xxxx</p>
       <p  th:text="${member}"></p>

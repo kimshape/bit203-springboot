@@ -40,7 +40,9 @@ public class LoginProcessController {
 			return "redirect:/loginForm";
 		}
 		model.addAttribute("userId", userId);
+		member.setActive(true);
 		model.addAttribute("member", member);
+		
 		return "welcome" ;
 	}
 	
@@ -50,7 +52,17 @@ public class LoginProcessController {
 		model.addAttribute( "memberList"  , memberDao.memberList());
 	}
 	
+	@GetMapping("/memberForm")
+	public void memberForm() {
+		
+	}
 	
+	
+	@PostMapping("/insertMember")
+	public String insertMember(Member member) {
+		memberDao.insertMember(member);
+		return "redirect:/memberList";
+	}
 	
 	
 	

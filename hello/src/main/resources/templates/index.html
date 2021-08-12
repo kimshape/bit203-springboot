@@ -7,8 +7,82 @@
   <body>
     환영 <p  th:text="#{home.welcome}"></p>
    
+   ${#messages.msg('home.welcome')} ==> [[ ${#messages.msg('home.welcome')} ]]  <br>
+                          환영 <p  th:text="${#messages.msg('home.welcome')}"></p> 
    
+  == [[${locale}]] ==  <br>
+  == [[${#locale}]] ==  <br>
+   == [[${#ctx.locale}]] ==  <br>
+  ${session.isEmpty()} =  [[${session.isEmpty()}]] <br>
+  
+  ${#request.getAttribute('foo')} ==  [[${#request.getAttribute('foo')}]]
+  <br>
+  ${foo}  == [[${foo}]]
+    <br>
+  
+  ${attribute에add되어 있는 객체} , #{메세지의키}, @{경로} . ${#내장명령어 }
+   
+	<br>
+	<!-- cast 예)
+	long a = 1212121;
+	int  b = (int)a;
+	
+	  
+	Object obj = new Date();
+	Date obj2 = (Date)obj ; -->
 	  
 	  
+	<!--  convert 문자로들어오는 수치모양 ==>  더블 , 정수화  
+	  --> 
+	  
+	  <br>  th:if  사용 <br>
+	  [[${member.isActive()}]] <br>
+	  <div th:if="${member.isActive()} == true">
+	  	<input type="text">
+	  </div>
+	  
+	  <br>
+	  <div th:if="true">
+	  	<input type="text">
+	  </div>
+	  
+	   <br>
+	   	<div th:if="false">
+	   	dfdfdkjfkdjf
+	  	<input type="text">
+	  </div>
+	   11111
+	  <div th:if="${member.isActive()} == false">
+	  	<input type="text">
+	  </div>
+	  <br>
+	  <div th:if="${!  member.isActive()}">
+	  	<input type="text">
+	  </div>
+	  <div th:unless="${!  member.isActive()}">
+	  th:unless
+	  	<input type="text">
+	  </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

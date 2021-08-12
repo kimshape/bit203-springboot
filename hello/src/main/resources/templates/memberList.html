@@ -6,6 +6,43 @@
   </head>
   <body>
     
-    [[${memberList}]]
+<!--     [[${memberList}]] , -->  
+
+	<table border="1">
+		<thead>
+			<tr><th colspan="7">활동 멤버 목록</th></tr>
+			<tr>
+				<th>순서</th>
+			    <th>아이디</th>
+			    <th>암호</th>
+			    <th>이름</th>
+			    <th>이메일</th>
+			    <th>나이</th>
+			    <th>활동상황</th>
+		  	</tr>
+		</thead>
+		<tbody>
+		<!-- 	for( 학생    stud :  학생List) {
+				stud.out();
+			} -->
+			<tr th:each="  member ,iterStat : ${memberList}">
+				<td th:text="${iterStat.index}">순서</td>
+				<td th:text="${member.userId}">아이디</td>
+				<td th:text="${member.userPw}">암호</td>
+				<td th:text="${member.userName}">이름</td>
+				<td th:text="${member.email}">이메일</td>
+				<td th:text="${member.age}">나이</td>
+				<td th:text="${member.active}">활동상황</td>
+			</tr>
+		</tbody>
+	</table>
   </body>
 </html>
+
+
+
+
+
+
+
+

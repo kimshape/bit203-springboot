@@ -3,7 +3,8 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.Mapping"/>
     <fullyQualifiedTypeName name="org.omg.CORBA.PUBLIC_MEMBER"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
 </qualifiedTypeNameHistroy>

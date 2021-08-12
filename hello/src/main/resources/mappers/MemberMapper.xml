@@ -9,6 +9,8 @@
   		select *  from  member  where  userId =#{userId} and userPw = #{userPw} 
   	</select>
 	
-	
+	<insert id="insertMember" parameterType="Member">
+  		INSERT INTO MEMBER VALUES(#{userId}, #{userPw}, #{userName}, #{email}, #{age})
+  	</insert>
 	
 </mapper>  

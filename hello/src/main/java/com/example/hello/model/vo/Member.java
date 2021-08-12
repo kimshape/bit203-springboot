@@ -6,7 +6,17 @@ public class Member {
 	private String userName;
 	private String email;
 	private int age;
+	private boolean active;
 	
+	
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
 	public Member() {
 		// TODO Auto-generated constructor stub
 		
@@ -21,6 +31,7 @@ public class Member {
 		this.age = age;
 	}
 
+	
 	public String getUserId() {
 		return userId;
 	}
@@ -62,6 +73,6 @@ public class Member {
 	@Override
 	public String toString() {
 		return "Member [userId=" + userId + ", userPw=" + userPw + ", userName=" + userName + ", email=" + email
-				+ ", age=" + age + "]";
+				+ ", age=" + age + ", active=" + active + "]";
 	}
 }

@@ -18,4 +18,8 @@ public interface MemberDao {
 //	
 	@Select("select  userId, userPw, userName, email, age    from  member")
 	List<Member>  memberList();
+	
+	
+	void  insertMember(Member member);
+	
 }
