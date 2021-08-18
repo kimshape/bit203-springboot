@@ -50,7 +50,7 @@ public class MemberUserDetailsServiceImpl implements UserDetailsService {
 		
 		return user;
 	}
-	
+
 }
 
 
