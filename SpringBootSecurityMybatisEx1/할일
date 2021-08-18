@@ -11,4 +11,28 @@
 	        결과를 받아서 
 	        /login 부분으로 이동한다
        
+///////////////////////////
+로그인 부분
+     redirect:/login
+        @RequestMapping("/login") ==> /SpringBootSecurityMybatisEx1/src/main/resources/templates/login.html  call
+     	public void memberLogin() {  }
+     	
+         <form action="/login" method="post">
+          post 이면서 /login 것이 없는상태 
+          ==>  UserDetailsService 를 구현시킨 클래스가 필요
+            ==> username 이 받을 것을 확인
+            ==> database select ~~  where 호출
+                --> dao의 메소드를 호출한다
+            ==> 권한에 맞게 롤 지정
+            ==> org.springframework.security.core.userdetails.User  dao로 리턴 받은 데이타를 
+            user에 대입
+           ==> 암호도 암호화를 시킨다
+     
+     
+     
+     
+     
+     
+     
+     
       

@@ -12,7 +12,7 @@ import com.bit.x3.model.vo.Member;
 public interface MemberDao {
 	
 	Member getMember(@Param("userId") String userId , @Param("userPw") String userPw);
-	
+	Member findMember(@Param("userId") String userId );
 //	public interface MemberDaoMyBatis {
 //		List<Member>  getAllMember();
 //	

@@ -8,9 +8,15 @@
 	<select id="getMember" resultType="Member">
   		select *  from  member  where  userId =#{userId} and userPw = #{userPw} 
   	</select>
+  	
+	<!-- Member findMember(@Param("userId") String userId ); -->
+	<select id="findMember" resultType="Member">
+  		select *  from  member  where  userId =#{userId}  
+  	</select>
+	
 	
 	<insert id="insertMember" parameterType="Member">
-  		INSERT INTO MEMBER VALUES(#{userId}, #{userPw}, #{userName}, #{email}, #{age},'t')
+  		INSERT INTO MEMBER VALUES(#{userId}, #{userPw}, #{userName}, #{email}, #{age}, #{active,jdbcType=CHAR})
   		<!-- INSERT INTO "SPRING"."MEMBER" ( userid, userpw,username,email,age)  VALUES ('lee4589', '1234', 'lee ja', 'kim99@kim.co.kr', 99) --> 
   	</insert>
 	
