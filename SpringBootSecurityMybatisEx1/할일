@@ -22,17 +22,45 @@
           ==>  UserDetailsService 를 구현시킨 클래스가 필요
             ==> username 이 받을 것을 확인
             ==> database select ~~  where 호출
-                --> dao의 메소드를 호출한다
+                --> dao의 메소드를 호출한다  Member table  -> class Member instance  반환
             ==> 권한에 맞게 롤 지정
             ==> org.springframework.security.core.userdetails.User  dao로 리턴 받은 데이타를 
             user에 대입
+            User  ==> 로그인을 해서 권한까지 가지고 있는 것
+            
            ==> 암호도 암호화를 시킨다
      
+//////////////////////////////////////////
+=====> WebSecurityConfigurerAdapter로 부터 파생된 클래스  config에서 구현
+로그인 성공여부
+	성공
+	 	호출 :  /loginSucces
+		어디서  :  MemberManagementController의 loginSucces() 
+		무엇을  : User 인스턴스에서 롤을 받고 
+		
+		어떻게     권한에 따른 접속할 수 있는 페이지로 이동 
+		         어드민 admmin/main 
+		         멤버  member/main
+		처리하고
+		결과를 어디서 보여줄까 : loginSucces.html 
+		것인가
+		 
+	아니다
+		무엇을 어떻게 어디서 처리할 것인가 
+		호출 :  /loginfail	
+		어디서  :  MemberManagementController의 loginfail() 
+		  ~~~~~~
+		결과를 어디서 보여줄까 : loginfail.html 
+
+///////////////////////////////////////////
+로그아웃  
+	지금까지 클라이언트가 사용하던 자원 정리 
+	세션을 만료시킨다 
+	실행하게 되면 어디로 가야될까 -- 로그인 , 메인 , ~~~~
+         ==> 메인 / -> index.html 
      
-     
-     
-     
-     
+      /logoutSucces   ==> logoutSucces.html
+     MemberManagementController의 logoutSucces() 
      
      
       

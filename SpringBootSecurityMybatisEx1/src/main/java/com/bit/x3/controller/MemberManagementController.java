@@ -3,6 +3,8 @@ package com.bit.x3.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,6 +37,28 @@ public class MemberManagementController {
 	public void memberLogin() {
 		log.info("login");
 	}
+	
+	@RequestMapping("/loginSucces")
+	public String loginSucces(@AuthenticationPrincipal User user) {
+		System.out.println("loginSucces  ==>"+user);
+		return "/loginSucces";
+	}
+	
+	
+	@RequestMapping("/logoutSucces")
+	public String logoutSucces() {
+		System.out.println("logoutSucces  ==>");
+		return "/logoutSucces";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//회원가입을 위한 form call
 	@GetMapping("/memberNew")
 	public String memberNewFormCall(Member member) {

@@ -38,7 +38,10 @@ public class MemberUserDetailsServiceImpl implements UserDetailsService {
 //			}else {
 //				grantedAuthorities.add(new SimpleGrantedAuthority(MemberRole.MEMBER.getValue()));
 //			}
+			
+			
 //			String role = username.equals("bit203") ? MemberRole.ADMIN.getValue() : MemberRole.MEMBER.getValue() ;
+			// grantedAuthorities.add(new SimpleGrantedAuthority(role);
 			
 			grantedAuthorities.add(new SimpleGrantedAuthority(username.equals("bit203") ? MemberRole.ADMIN.getValue() : MemberRole.MEMBER.getValue()));
 			user = new User(member.getUserId(), member.getUserPw(), grantedAuthorities);
@@ -47,7 +50,7 @@ public class MemberUserDetailsServiceImpl implements UserDetailsService {
 		
 		return user;
 	}
-
+	
 }
 
 
