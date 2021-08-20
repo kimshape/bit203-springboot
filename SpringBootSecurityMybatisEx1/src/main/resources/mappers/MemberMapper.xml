@@ -15,9 +15,43 @@
   	</select>
 	
 	
+	<!-- //  나이는 23세이고 이메일에 @ 있는 것
+	//select *  from  member  where age =23 and  email like '%@%' ;
+	//동적 SQL
+		List<Member> memberListWhere(@Param("age")int age, @Param("email")String email);;-->
+	
+	<select id="memberListWhere" resultType="Member">
+		select *  from  member
+		<where>
+			<if test="age > 0">
+		         age = #{age}
+		    </if>
+		    <if test="email != null">
+		        AND email like  '%'||#{email}||'%'
+
+		    </if>
+		   
+		</where>
+	</select>
+	
+	
+	<!-- List<Member> memberListWhereObject(Member member); -->
+	<select id="memberListWhereObject" parameterType="Member" resultType="Member" >
+		select *  from  member
+	</select>
+	
+	
 	<insert id="insertMember" parameterType="Member">
   		INSERT INTO MEMBER VALUES(#{userId}, #{userPw}, #{userName}, #{email}, #{age}, #{active,jdbcType=CHAR})
   		<!-- INSERT INTO "SPRING"."MEMBER" ( userid, userpw,username,email,age)  VALUES ('lee4589', '1234', 'lee ja', 'kim99@kim.co.kr', 99) --> 
   	</insert>
+	
+	
+	
+	
+	
+	
+	
+	
 	
 </mapper>  

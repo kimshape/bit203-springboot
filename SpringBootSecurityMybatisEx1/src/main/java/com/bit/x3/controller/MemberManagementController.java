@@ -69,11 +69,17 @@ public class MemberManagementController {
 //		System.out.println("loginSucces  ==>"+user);
 //		System.out.println("loginSucces  ==>"+requestWrapper.isUserInRole("ADMIN"));
 		
-		List<Member> members = memberDao.memberList();
+		List<Member> members = memberDao.memberListWhere(-1, "@");    //memberDao.memberList();
+		
 		model.put("members", members)  ;
 		model.put("currentAdminId", user.getUsername());
 		return "/admin/main";
 	}
+	
+	
+	
+	
+	
 	
 	
 	@RequestMapping("/logoutSucces")

@@ -8,6 +8,14 @@ public class Member {
 	private int age;
 	private boolean active;
 	
+	public boolean isAdmin() {
+		return isAdmin;
+	}
+
+	public void setAdmin(boolean isAdmin) {
+		this.isAdmin = isAdmin;
+	}
+	private boolean isAdmin;
 	
 	public boolean isActive() {
 		return active;

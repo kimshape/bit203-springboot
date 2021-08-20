@@ -10,7 +10,7 @@
   	</select>
 	
 	<insert id="insertMember" parameterType="Member">
-  		INSERT INTO MEMBER VALUES(#{userId}, #{userPw}, #{userName}, #{email}, #{age})
+  		INSERT INTO MEMBER  (userId, userPw, userName, email, age,active,isAdmin)     VALUES(#{userId}, #{userPw}, #{userName}, #{email}, #{age},#{active},#{isAdmin})
   	</insert>
 	
 </mapper>  

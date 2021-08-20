@@ -6758,3 +6758,141 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.927
 !MESSAGE executing callback sts4.classpath.NIjEOkav SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-20 09:39:48.726
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:48.732
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:48.732
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:48.732
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:48.732
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:48.733
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:48.746
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:48.774
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:48.775
+!MESSAGE buffering callback sts4.classpath.NIjEOkav SpringBootSecurityMybatisEx1 false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:48.775
+!MESSAGE executing callback sts4.classpath.NIjEOkav 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:48.827
+!MESSAGE executing callback sts4.classpath.NIjEOkav SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:49.465
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:49.468
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:49.469
+!MESSAGE buffering callback sts4.classpath.NIjEOkav SpringBootSecurityMybatisEx1 false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:49.469
+!MESSAGE executing callback sts4.classpath.NIjEOkav 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-20 09:39:49.572
+!MESSAGE executing callback sts4.classpath.NIjEOkav SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-08-20 09:39:50.400
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:50.402
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:50.403
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:50.431
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:50.481
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:50.903
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.017
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.019
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.019
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.019
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.019
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.158
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.642
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.643
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.643
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.644
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.644
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-20 09:39:51.647
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.655
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.665
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.666
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.667
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.667
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.667
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.987
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.988
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.988
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.988
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.989
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-20 10:09:53.989
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'

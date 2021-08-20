@@ -20,6 +20,13 @@ public interface MemberDao {
 	List<Member>  memberList();
 	
 	
+	//   나이는 23세이고 이메일에 @ 있는 것
+	//select *  from  member  where age =23 and  email like '%@%' ;
+	//동적 SQL
+	List<Member> memberListWhere(@Param("age")int age, @Param("email")String email);
+	
+	List<Member> memberListWhereObject(Member member);
+	
 	void  insertMember(Member member);
 	
 }

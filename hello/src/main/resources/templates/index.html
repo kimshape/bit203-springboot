@@ -10,13 +10,14 @@
    ${#messages.msg('home.welcome')} ==> [[ ${#messages.msg('home.welcome')} ]]  <br>
                           환영 <p  th:text="${#messages.msg('home.welcome')}"></p> 
    
-  == [[${locale}]] ==  <br>
-  == [[${#locale}]] ==  <br>
-   == [[${#ctx.locale}]] ==  <br>
-  ${session.isEmpty()} =  [[${session.isEmpty()}]] <br>
+  == [[${locale}]] ==  attribute에 add되어 있는 locale 의 값을 출력해 <br>
+  == [[${#locale}]] == pageContext 내장되어 있는 명령(인스턴스)중에 locale이라는 인스턴스가 갖고 있는 값을 출력 <br>
+   == [[${#ctx.locale}]] == ctx 는 pageContext라는 의미로 전달 , ctx라는 내장된 명령어의 키또는 속성의 값이 locale인 것의 값을 출력해 <br>
+  ${session.isEmpty()} =  [[${session.isEmpty()}]]  ${session.attribute의 이름 메소드명 }  session른 내장명령어<br>
   
   ${#request.getAttribute('foo')} ==  [[${#request.getAttribute('foo')}]]
   <br>
+
   ${foo}  == [[${foo}]]
     <br>
   
@@ -36,8 +37,10 @@
 	  --> 
 	  
 	  <br>  th:if  사용 <br>
-	  [[${member.isActive()}]] <br>
-	  <div th:if="${member.isActive()} == true">
+	 ${bean.isActive} == [[${bean.isActive}]] <br>
+	   ${member.isActive()} == [[${member.isActive}]] <br>
+	 ${member.isActive()} == [[${member.isActive()}]] <br>
+	  <div th:if="${member.isActive}">
 	  	<input type="text">
 	  </div>
 	  
@@ -56,7 +59,8 @@
 	  	<input type="text">
 	  </div>
 	  <br>
-	  <div th:if="${!  member.isActive()}">
+	  <div th:if="${not  member.isActive}">
+	  dkjfdsjdskjds
 	  	<input type="text">
 	  </div>
 	  <div th:unless="${!  member.isActive()}">

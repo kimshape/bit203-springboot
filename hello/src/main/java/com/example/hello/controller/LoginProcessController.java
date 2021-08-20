@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.hello.model.dao.MemberDao;
+import com.example.hello.model.service.MemberDaoCallService;
 import com.example.hello.model.vo.Member;
 
 @Controller
@@ -26,13 +27,14 @@ public class LoginProcessController {
 		return "loginForm" ;
 	}
 	
-	
+	@Autowired
+	private MemberDaoCallService memberDaoCallService;
+			
 	@PostMapping("/loginCheck")
 	public String loginCheck(String userId, String userPw ,Model model) {
 		System.out.println("userId : "+userId);
 		
-		
-		Member member = memberDao.getMember(userId, userPw);
+		Member member = memberDaoCallService.getMember(userId, userPw);
 //		존재: welcome.html
 //	    존재하지 않는다면 : loginForm.html
 //		
@@ -64,6 +66,10 @@ public class LoginProcessController {
 		return "redirect:/memberList";
 	}
 	
-	
+	@PostMapping("/insertMemberService")
+	public String insertMemberService(Member member,Model model) {
+		model.addAttribute("memberList",memberDaoCallService.insertMember(member));
+		return "/memberList";
+	}
 	
 }
