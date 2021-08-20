@@ -1,10 +1,17 @@
 package com.bit.x3.controller;
 
+import java.util.List;
+import java.util.Map;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestWrapper;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,6 +42,59 @@ public class MemberManagementController {
 	public void memberLogin() {
 		log.info("login");
 	}
+	
+	@RequestMapping("/loginSucces")
+	public String loginSucces(@AuthenticationPrincipal User user, Map<String, Object> model, SecurityContextHolderAwareRequestWrapper requestWrapper) {
+		//System.out.println("loginSucces  ==>"+user);
+		String nextPage = "/loginSucces";
+		if(user==null) {
+			model.put("message", "유요하지 않은 데이터");
+			nextPage = "redirect:/denied";
+		}else {
+			if(requestWrapper.isUserInRole("ADMIN")) {
+				
+				//////
+				nextPage = "redirect:/admin/main";
+			}else {
+				
+				model.put("currentMemberId", user.getUsername());
+				nextPage = "/member/main";
+			}
+		}
+		return nextPage;
+	}
+	
+	@GetMapping("/admin/main")
+	public String adminMain(@AuthenticationPrincipal User user, Map<String, Object> model, SecurityContextHolderAwareRequestWrapper requestWrapper) {
+//		System.out.println("loginSucces  ==>"+user);
+//		System.out.println("loginSucces  ==>"+requestWrapper.isUserInRole("ADMIN"));
+		
+		List<Member> members = memberDao.memberList();
+		model.put("members", members)  ;
+		model.put("currentAdminId", user.getUsername());
+		return "/admin/main";
+	}
+	
+	
+	@RequestMapping("/logoutSucces")
+	public String logoutSucces() {
+		System.out.println("logoutSucces  ==>");
+		return "/logoutSucces";
+	}
+	
+	@GetMapping("/denied")
+	public void denied() {
+		
+	}
+	
+	@GetMapping("/member/main")
+	public String memberInfo(@AuthenticationPrincipal User user,Model model) {
+		model.addAttribute("currentMemberId", user.getUsername()); 
+		return "/member/main";
+	}
+	
+	
+	
 	//회원가입을 위한 form call
 	@GetMapping("/memberNew")
 	public String memberNewFormCall(Member member) {

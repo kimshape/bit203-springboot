@@ -11,6 +11,6 @@ public class Member {
 	private String email;
 	private int age;
 	private boolean isActive;
-	
+	private boolean isAdmin;
 	
 }

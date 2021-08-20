@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>member main</title>
+  </head>
+  <body>
+    <h1>Current Member Id</h1>
+	<p th:text="${currentMemberId}"></p>
+	
+	<a th:href="@{'/'}">메인으로 이동</a>
+  </body>
+</html>

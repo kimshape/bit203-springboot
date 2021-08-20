@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>admin main</title>
+  </head>
+  <body>
+  <th:block th:if="${message ==null}">
+	<h1>Current Admin Id</h1>
+	<p th:text="${currentAdminId}"></p>
+	<h1>Members</h1>
+	<table>
+	    <tr th:each="member : ${members}">
+	        <td th:text="${member.getUserId()}"></td>
+	        <td th:text="${member.userName}"></td>
+	        <td th:text="${member.email}"></td>
+	    </tr>
+	</table>
+</th:block>
+    <a th:href="@{'/'}">메인으로 이동</a>
+  </body>
+</html>

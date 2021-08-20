@@ -43,14 +43,19 @@ public class MemberUserDetailsServiceImpl implements UserDetailsService {
 //			String role = username.equals("bit203") ? MemberRole.ADMIN.getValue() : MemberRole.MEMBER.getValue() ;
 			// grantedAuthorities.add(new SimpleGrantedAuthority(role);
 			
-			grantedAuthorities.add(new SimpleGrantedAuthority(username.equals("bit203") ? MemberRole.ADMIN.getValue() : MemberRole.MEMBER.getValue()));
+//			grantedAuthorities.add(new SimpleGrantedAuthority(
+//					username.equals("bit203") ? MemberRole.ADMIN.getValue() : MemberRole.MEMBER.getValue()));
+//			
+			grantedAuthorities.add(new SimpleGrantedAuthority(
+					member.isAdmin()? MemberRole.ADMIN.getValue() : MemberRole.MEMBER.getValue()));
+			
 			user = new User(member.getUserId(), member.getUserPw(), grantedAuthorities);
 			System.out.println("user "+ user);
 		}
 		
 		return user;
 	}
-
+	
 }
 
 

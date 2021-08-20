@@ -6551,3 +6551,210 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY Activator 1 0 2021-08-17 09:47:43.655
 !MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:22.349
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:22.362
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:22.362
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:22.362
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:22.363
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:22.364
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:23.503
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:23.510
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:23.515
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:23.537
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:23.584
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:23.927
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.304
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.305
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.306
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.306
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.306
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.306
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.653
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.655
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.658
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.659
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.660
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:24.660
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:25.860
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:25.861
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:25.861
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:25.862
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:25.862
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:25.862
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:26.100
+!MESSAGE Has main method computation for project 'SpringBootSecurityMybatisEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:26.101
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx1'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:26.102
+!MESSAGE Has main method computation for project 'SpringBootSecurityEx2'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:26.102
+!MESSAGE Has main method computation for project 'hello'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:26.103
+!MESSAGE Has main method computation for project 'SpringBooSecurityMySqlLoginThymeleaf'
+
+!ENTRY Activator 1 0 2021-08-18 15:23:26.103
+!MESSAGE Has main method computation for project 'SpringBooSecurityH2LoginThymeleaf'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:32.953
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:32.955
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@37b9c03d[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=552)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:32.957
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:32.997
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.386
+!MESSAGE Boot LS startup time from start to initialized: 2408ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.467
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.NIjEOkavisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.469
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.471
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.472
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.472
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.NIjEOkav => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.475
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.492
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.493
+!MESSAGE buffering callback sts4.classpath.NIjEOkav SpringBootSecurityMybatisEx1 false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.494
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.499
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.500
+!MESSAGE buffering callback sts4.classpath.NIjEOkav DebugTest false 47
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.500
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.511
+!MESSAGE classpath=123 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.512
+!MESSAGE buffering callback sts4.classpath.NIjEOkav SpringBooSecurityH2LoginThymeleaf false 123
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.512
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.524
+!MESSAGE classpath=126 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.526
+!MESSAGE buffering callback sts4.classpath.NIjEOkav SpringBooSecurityMySqlLoginThymeleaf false 126
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.527
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.532
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.533
+!MESSAGE buffering callback sts4.classpath.NIjEOkav SpringBootSecurityEx1 false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.536
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.543
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.544
+!MESSAGE buffering callback sts4.classpath.NIjEOkav SpringBootSecurityEx2 false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.544
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.546
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.546
+!MESSAGE buffering callback sts4.classpath.NIjEOkav hello false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.547
+!MESSAGE executing callback sts4.classpath.NIjEOkav 7 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-18 15:23:35.927
+!MESSAGE executing callback sts4.classpath.NIjEOkav SUCCESS [done]
